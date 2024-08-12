@@ -35,8 +35,8 @@ export default class DataBase {
         const index = this.maintenance.indexOf(maintenance);
         this.maintenance.splice(index, 1);
     }
-    public getCar(id: number): Car {
-        return this.cars[id];
+    public getCar(id: number): Car|undefined {
+        return this.cars.find((car) => car.getId() === id);
     }
     public getMotorcycle(id: number): Motorcycle {
         return this.motorcycles[id];

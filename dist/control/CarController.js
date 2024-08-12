@@ -25,5 +25,8 @@ class CarController {
     listAllCars() {
         return this.dataBase.listAllCars();
     }
+    getCarById(id) {
+        return this.dataBase.getCar(id);
+    }
 }
 exports.default = CarController;

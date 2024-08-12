@@ -29,7 +29,7 @@ class DataBase {
         this.maintenance.splice(index, 1);
     }
     getCar(id) {
-        return this.cars[id];
+        return this.cars.find((car) => car.getId() === id);
     }
     getMotorcycle(id) {
         return this.motorcycles[id];
